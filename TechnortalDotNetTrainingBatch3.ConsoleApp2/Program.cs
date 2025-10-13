@@ -11,11 +11,17 @@ Console.WriteLine("Hello, World!");
 //productService.Update(); 
 //productService.Delete(); 
 
-ProductDapperService productDapperService = new ProductDapperService();
-productDapperService.Read(); // F11 | Fn + F11
-productDapperService.Create();
-productDapperService.Update();
-productDapperService.Delete();
+//ProductDapperService productDapperService = new ProductDapperService();
+//productDapperService.Read(); // F11 | Fn + F11
+//productDapperService.Create();
+//productDapperService.Update();
+//productDapperService.Delete();
+
+ProductEFCoreService productEFCoreService = new ProductEFCoreService();
+productEFCoreService.Read();
+productEFCoreService.Create();
+productEFCoreService.Update();
+productEFCoreService.Delete();
 
 // Fn + Esc
 
