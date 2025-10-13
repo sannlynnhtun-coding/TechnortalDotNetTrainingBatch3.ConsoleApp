@@ -6,11 +6,12 @@ EFCore
 - Database First
 
 Homework
-ADO.NET - Project - 1
-Dapper - Project - 1
-EFCore Database First - Project - 2 (ConsoleApp + Database)
+- ADO.NET - Project - 1
+- Dapper - Project - 1
+- EFCore Database First - Project - 2 (ConsoleApp + Database)
 
 Product (CRUD)
+```sql
 CREATE TABLE [dbo].[Tbl_Product](
 	[ProductId] [int] IDENTITY(1,1) NOT NULL,
 	[ProductName] [varchar](50) NOT NULL,
@@ -25,16 +26,18 @@ CREATE TABLE [dbo].[Tbl_Product](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-
+```
 
 Sale (Create, Read)
-SaleId
-ProductId
-Quantity
-Price
-DeleteFlag
-CreatedDateTime
+- SaleId
+- ProductId
+- Quantity
+- Price
+- DeleteFlag
+- CreatedDateTime
 
-Validation (Quantity <, Quantity -)
+- Validation (Quantity <, Quantity -)
 
+```bash
 dotnet ef dbcontext scaffold "Server=.;Database=Batch3MiniPOS;User ID=sa;Password=sasa@123;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -o AppDbContextModels -c AppDbContext -f
+```
